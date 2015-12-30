@@ -12,8 +12,6 @@
  */
 
 use Helpers\View\View;
-use Helpers\Input\Input;
-use Libraries\CronLibrary\SampleCronController;
 
 class HomeController extends BaseController {
 
@@ -25,28 +23,8 @@ class HomeController extends BaseController {
 	 */
 	public function index()
 	{
-		//define the page title
-		$data['title'] = 'Gliver MVC PHP Framework';
-
 		//get the ending date today
-		View::render('index', $data);
-
-	}
-
-	/**
-	*This method initializes a cron job in the library which executes a series of queries in the 
-	*database to keep user information in synch
-	*
-	*@param null
-	*@return void
-	*/
-	public function CronInit(){
-
-		//create an instance of the cronController class
-		$cronControllerObject = new SampleCronController();
-
-		//call the method to lauch the cron job operation
-		$cronControllerObject->init();
+		View::render('home/home');
 
 	}
 	
