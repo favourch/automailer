@@ -16,7 +16,7 @@ class UsersModel extends Model{
 	/**
 	*@var string The name of the table associated with this model
 	*/
-	protected $table = 'users';	
+	protected static $table = 'users';	
 
 	/**
 	 *This method gets the records of all users from the database
