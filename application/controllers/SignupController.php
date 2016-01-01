@@ -8,7 +8,7 @@
  *@package Controllers\Signup
  */
 
-use Helpers\View\View;
+use Drivers\Templates\View;
 use Models\UsersModel;
 use Helpers\Input\Input;
 use Helpers\Redirect\Redirect;

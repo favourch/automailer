@@ -8,7 +8,7 @@
  *@package Controllers\Users
  */
 
-use Helpers\View\View;
+use Drivers\Templates\View;
 use Models\UsersModel;
 
 class HomeController extends BaseController {

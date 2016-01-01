@@ -1,0 +1,3 @@
+E_ERROR Class 'Helpers\View\View' not found in D:\xampp\htdocs\automailer\application\controllers\HomeController.php on line (31) As seen from  D:\xampp\htdocs\automailer\system\Exceptions\Debug\BaseShutdown.php(38): handler(1, 'Class 'Helpers\\...', 'D:\\xampp\\htdocs...', 31)
+#1 [internal function]: shut()
+#2 {main}
