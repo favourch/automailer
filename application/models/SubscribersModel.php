@@ -7,12 +7,13 @@
  *@category Models
  *@package Models\Subscribers
  */
+
 class SubscribersModel extends Model{
 	
 	/**
 	 *@var string The table name associated with this model
 	 */
-	protected $table = 'mailing_subscribers';
+	protected static $table = 'mailing_subscribers';
 
 	/**
 	 *This method returns all lists names from the database
@@ -29,5 +30,27 @@ class SubscribersModel extends Model{
 		
 	}	
 
+	/**
+	*This method gets and returns this tables column names in an array.
+	*@param null
+	*@return array The field names in array format
+	*/
+	public static function getTableColumnNames()
+	{
+		//set the first row in table to get table fields
+		$first_row = static::Query()->from(self::$table)->first();
+
+		//loop through result making the table field names
+		foreach($first_row->query_fields() as $key => $field_info)
+		{
+			//get the column name
+			$columns[] = $field_info->name;
+
+		}
+
+		//remove the id field and return
+		return array_slice($columns, 1);
+
+	}
 
 }
