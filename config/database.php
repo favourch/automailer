@@ -29,7 +29,7 @@ return array(
 		/*
 		 *Specify the database to connnect to
 		 */
-		'database' 	=> '',
+		'database' 	=> 'email_autoreponder',
 		/**
 		 *Specify the database server port
 		 */
