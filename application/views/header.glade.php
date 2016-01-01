@@ -10,9 +10,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="{{Url::assets('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{Url::assets('font-awesome/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{Url::assets('css/styles.css')}}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,10 +21,10 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         
-        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="{{Url::assets('js/jquery-2.1.4.min.js')}}"></script>
         <!-- script references -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{Url::assets('js/bootstrap.min.js')}}"></script>
+        <script src="{{Url::assets('js/scripts.js')}}"></script>
 
         <!-- you need to include the shieldui css and js assets in order for the charts to work -->
         <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />

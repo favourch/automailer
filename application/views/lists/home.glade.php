@@ -1,4 +1,4 @@
-@include('home/header')
+@include('header')
 
 @include('home/menu')
 
@@ -59,4 +59,4 @@
 
 </div>
 
-@include('home/footer')
+@include('footer')
