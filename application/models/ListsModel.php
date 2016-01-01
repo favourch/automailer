@@ -37,10 +37,25 @@ class ListsModel extends Model{
 	public static function create($list_info)
 	{
 		//call method to save info in the database
-		$save_list = static::Query()->from($self::$table)->save($list_info);
+		$save_list = static::Query()->from(self::$table)->save($list_info);
 
 		//return the list_id
-		return $save_list->lastInsertId();
+		return $save_list;
+
+	}
+
+	/**
+	*This method gets and returns a list information by id.
+	*@param int $list_id The list id as stored in the database
+	*@return array The list info in array format
+	*/
+	public static function getById($list_id)
+	{
+		//get hte list info
+		$list_info = static::Query()->from(self::$table)->where('id = ?', $list_id)->all();
+
+		//return row in object format
+		return $list_info->result_array();
 
 	}
 
