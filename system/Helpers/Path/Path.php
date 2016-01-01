@@ -36,7 +36,7 @@ class Path {
 		//get the global configuration array
 		global $config;
 
-		return Registry::getConfig()['root'] . DIRECTORY_SEPARATOR . 'application' . DIRECTORY_SEPARATOR;
+		return Registry::getConfig()['root'] .'/application/';
 
 	}
 	
