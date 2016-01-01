@@ -33,7 +33,7 @@
                         @foreach($lists as $list)
 
                             <tr>
-                                <td>{{$list['name']}}</td><td>{{$list['recepients']}}</td><td>{{$list['campaigns']}}</td><td>{{$list['date_created']}}</td><td><a href="">View Reports</a></td>
+                                <td>{{$list->name}}</td><td>{{$list->recipients}}</td><td>{{$list->campaigns}}</td><td>{{$list->date_created}}</td><td><a href="">View Reports</a></td>
                             </tr>
 
                         @endforeach
