@@ -12,6 +12,7 @@
  */
 
 use Helpers\View\View;
+use Models\ListsModel;
 
 class HomeController extends BaseController {
 
@@ -23,8 +24,11 @@ class HomeController extends BaseController {
 	 */
 	public function index()
 	{
+		//get all list names from the database
+		$data['lists'] = ListsModel::all();
+
 		//get the ending date today
-		View::render('home/home');
+		View::render('home/home', $data);
 
 	}
 	
